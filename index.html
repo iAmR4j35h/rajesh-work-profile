@@ -157,8 +157,24 @@
     }
 
     @media (max-width: 768px) {
+      .hero { padding: 100px 0 40px; }
       .hero-top { flex-direction: column; }
-      .hero-photo { width: 140px; height: 175px; margin-top: 0; }
+      .hero-photo { width: 100%; height: auto; aspect-ratio: 4/5; margin-top: 24px; }
+      .hero-content .stats { gap: 16px; justify-content: flex-start; }
+      .hero-content .stats .stat-item { text-align: left; }
+      .hero-btns { flex-direction: column; }
+      .hero-meta { flex-wrap: wrap; gap: 12px; }
+      .about-grid { grid-template-columns: 1fr; }
+      .about-cards { margin-top: 24px; }
+      .skills-grid { grid-template-columns: 1fr; }
+      .projects-grid { grid-template-columns: 1fr; }
+      .exp-card { flex-direction: column; gap: 8px; }
+      .exp-header { flex-direction: column; gap: 4px; }
+      .exp-year { margin-bottom: 0; }
+      .contact-grid { grid-template-columns: 1fr; }
+      nav { display: none; }
+      section { padding: 48px 0; }
+      .section-title { font-size: 24px; }
     }
 
     .hero h1 {
@@ -551,18 +567,7 @@
       nav { display: none; }
     }
 
-    @media (max-width: 600px) {
-      .hero { padding: 120px 0 60px; }
-      .hero-btns { flex-direction: column; }
-      .hero-meta { flex-direction: row; flex-wrap: wrap; gap: 12px 24px; align-items: center; }
-      .stats { flex-wrap: wrap; gap: 24px; }
-      .stat-item { width: calc(50% - 12px); }
-      .skills-grid { grid-template-columns: 1fr; }
-      .exp-card { flex-direction: column; gap: 12px; }
-      .exp-header { flex-direction: column; gap: 8px; }
-      .exp-year { margin-bottom: 0; }
-      .contact-grid { grid-template-columns: 1fr; }
-    }
+
 
     @media (prefers-reduced-motion: reduce) {
       * { transition: none !important; animation: none !important; }
@@ -612,7 +617,7 @@
               </div>
               <div class="meta-item">
                 <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
-                <span>Noesis Tech CTO</span>
+                <a href="https://noesis.tech/" target="_blank">Noesis Tech CTO</a>
               </div>
             </div>
 
@@ -646,7 +651,7 @@
 
         <div class="about-grid">
           <div class="about-text">
-            <p>I started writing code in 2017 as a software engineer. By 2022 I co-founded Veecorp Solutions, scaling team from 3 to 14 engineers (50+ total across all roles). Today I serve as CTO at Noesis Tech, shipping AI platforms and products across <strong>GenAI, FinTech, EduTech, MedTech, and Retail</strong>.</p>
+            <p>I started writing code in 2017 as a software engineer. By 2022 I co-founded Veecorp Solutions, scaling team from 3 to 14 engineers (50+ total across all roles). Today I serve as CTO at <a href="https://noesis.tech/" target="_blank">Noesis Tech</a>, shipping AI platforms and products across <strong>GenAI, FinTech, EduTech, MedTech, and Retail</strong>.</p>
             <br/>
             <p>I work at the intersection of <strong>product thinking and systems engineering</strong> comfortable setting technical vision in the boardroom and reviewing pull requests in the trenches.</p>
           </div>
