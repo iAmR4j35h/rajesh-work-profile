@@ -171,7 +171,7 @@
       .exp-card { flex-direction: column; gap: 8px; }
       .exp-header { flex-direction: column; gap: 4px; }
       .exp-year { margin-bottom: 0; }
-      .contact-grid { grid-template-columns: 1fr; }
+      .contact-grid { grid-template-columns: 1fr; max-width: 100%; }
       nav { display: none; }
       section { padding: 48px 0; }
       .section-title { font-size: 24px; }
@@ -507,8 +507,9 @@
     /* Contact */
     .contact-grid {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(3, 1fr);
       gap: 16px;
+      max-width: 700px;
     }
 
     .contact-card {
